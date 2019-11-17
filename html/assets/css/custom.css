@@ -1,0 +1,94 @@
+/*
+ * Homepage
+ */
+
+#home-header {
+  background-size: cover;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 400px;
+  max-height: 500px;
+}
+
+#home-infopanel {
+  background-size: cover;
+}
+
+
+/*
+ * Landing page
+ */
+
+#landing {
+  height: 100%;
+  background: url(/assets/img/dh8d.jpeg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.landing-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+
+.sidebar-academy {
+  top: 129px;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  z-index: 1000;
+}
+
+.footer a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}

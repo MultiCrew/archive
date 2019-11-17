@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-dark bg-dark text-center">
+			<a class="navbar-brand mx-auto" href="https://multicrew.co.uk/home.php">
+				<img class="mx-auto" src="https://multicrew.co.uk/assets/img/logo.png" height="50" alt="MultiCrew logo" class="align-top">
+			</a>
+		</nav>
+
+		<div class="container mb-5">
+
+			<h1 class="mt-3">Your session has been cancelled</h1>
+
+			<p>Dear {full name},</p>
+
+			<p>Unfortunately, your mentoring session has been cancelled. Please review the details below:</p>
+
+			<table class="table w-25 table-bordered table-sm">
+
+				<tbody>
+
+					<tr>
+						<th>Date</th>
+						<td>{date}</td>
+					</tr>
+
+					<tr>
+						<th>Start Time</th>
+						<td>{stime}</td>
+					</tr>
+
+					<tr>
+						<th>End Time</th>
+						<td>{ftime}</td>
+					</tr>
+
+					<tr>
+						<th>Aircraft</th>
+						<td>{acft}</td>
+					</tr>
+
+					<tr>
+						<th>{Type}</th>
+						<td>{type name}</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+
+			<p>Your instructor gave the following reason(s) for cancelling the session:</p>
+
+			<p>{reasons}</p>
+
+			<hr>
+
+			<p>If you would like to discuss this any further, please <strong>forward this email</strong> to <a href="mailto:admin@multicrew.co.uk">admin@multicrew.co.uk</a>.</p>
+
+			<p>If you do not have any further sessions scheduled, please ensure you have <strong>up to date availability</strong> set in your <a href="https://academy.multicrew.co.uk/sys/dashboard.php">myAcademy</a> system.</p>
+
+		</div>
+
+		<footer class="bg-light navbar-light py-5">
+
+			<div class="container text-muted text-center">
+
+				<p>This email was sent to you as your email address is registered to a <a href="https://portal.multicrew.co.uk">MultiCrew Portal</a> account. If you did not create this account yourself, you may request that the account is deleted by emailing, <strong>from the email address in receipt of this email</strong>, <a href="mailto:admin@multicrew.co.uk">admin@multicrew.co.uk</a>.</p>
+
+				<p class="lead">MultiCrew is community-driven flight simulation organisation that provides training and support for shared cockpit aircraft addons.</p>
+
+				<p>&copy; MultiCrew 2018 &middot;  <a href="https://www.multicrew.co.uk/policies.php">Terms and Policies</a> &middot; <a href="https://status.multicrew.co.uk/">Service Status</a></p>
+
+				<p>
+					<a href="https://www.facebook.com/flymulticrew/"><i class="fab fa-lg fa-fw fa-facebook-f"></i></a>
+					<a href="https://www.twitter.com/flymulticrew/"><i class="fab fa-lg fa-fw fa-twitter"></i></a>
+					<a href="https://www.youtube.com/channel/UCT7U2Ss79D76FkyRsNIadMA"><i class="fab fa-lg fa-fw fa-youtube"></i></a>
+					<a href="https://go.twitch.tv/multicrew"><i class="fab fa-lg fa-fw fa-twitch"></i></a>
+				</p>
+
+			</div>
+
+		</footer>
+
+	</body>
+
+</html>

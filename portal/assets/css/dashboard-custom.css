@@ -1,0 +1,31 @@
+.btn-square {
+
+  border-radius: 0px;
+
+}
+
+#hi {
+
+  font-size: 5rem;
+
+}
+
+.search-in-form {
+
+  margin-bottom: 0px;
+
+}
+
+.user-buttons {
+
+  text-align: right;
+
+}
+
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}

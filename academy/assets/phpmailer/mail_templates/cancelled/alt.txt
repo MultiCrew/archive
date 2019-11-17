@@ -1,0 +1,29 @@
+===================================
+| Your session has been cancelled |
+===================================
+
+Dear {name},
+
+Unfortunately your mentoring session has been cancelled. Please review the details below:
+
+Date: {date}
+Start Time: {stime}
+End Time: {ftime}
+Aircraft: {acft}
+Instructor: {instr}
+
+Your instructor gave the following reason(s) for cancelling the session:
+
+{reasons}
+
+If you would like to discuss this any further, please forward this email to admin@multicrew.co.uk.
+
+If you do not have any further sessions scheduled, please ensure you have up to date availability set in your myAcademy system.
+
+
+--- --- --- --- --- --- --- --- ---
+
+
+This email was sent to you as your email address is registered to a MultiCrew Portal account. If you did not create this account yourself, you may request that the account is deleted by emailing, from the email address in receipt of this email, admin@multicrew.co.uk.
+
+MultiCrew is community-driven flight simulation organisation that provides training and support for shared cockpit aircraft addons.
