@@ -1,0 +1,75 @@
+
+
+###########
+# DEFUNCT #
+###########
+# async def role_assign(usertype, discord_id, userstatus):
+
+#     a = conn.cursor()
+#     sql = "SELECT username FROM users WHERE discord =%s"
+#     data = int(discord_id)
+#     a.execute(sql, data)
+#     data = a.fetchone()
+#     username = data[0]
+#     try:
+#         user = client.get_server("440545668168286249").get_member(discord_id)
+#         if "484177024034799616" in [role.id for role in user.roles] and userstatus != "unban":
+#             return
+#         else:
+
+#             if usertype == 'trngman':
+#                 newrole = discord.utils.get(client.get_server("440545668168286249").roles, name='training manager')
+#                 await client.replace_roles(user, newrole)
+#                 await client.change_nickname(user, username)
+#                 if userstatus == "return" or userstatus == "unban":
+#                     return
+#                 else:
+#                     msg = ', your role has been assigned. Enjoy!'
+#                     formatmsg = user.mention + msg
+#                     await client.send_message(user, content=formatmsg)
+#             else:
+#                     newrole = discord.utils.get(client.get_server("440545668168286249").roles, name=usertype)
+#                     await client.replace_roles(user, newrole)
+#                     await client.change_nickname(user, username)
+#                     if userstatus == "return" or userstatus == "unban":
+#                         return
+#                     else:
+#                         msg = ', your role has been assigned. Enjoy!'
+#                         formatmsg = user.mention + msg
+#                         await client.send_message(user, content=formatmsg)
+
+#     except TypeError:
+#         user = await client.get_user_info(user_id=discid)
+#         msg = ', you have entered an invalid Discord ID in your MultiCrew profile and your role can\'t be assigned. Please enter "!roles help" and try again.'
+#         formatmsg = user.mention + msg
+#         await client.send_message(user, formatmsg)
+
+
+
+# direct message the user with their discord ID
+# EVENT: first time a user joins the server
+# @client.event
+# async def on_member_join(member):
+#
+#     discord_id = member.id
+#     conn = pymysql.connect(host='localhost', user='root', password='z!fA8Q>`gYC&_;d9T"jD`.nZc(ncaY*N', db='sso')
+#     mysql = conn.cursor()
+#
+#     qry = "SELECT type FROM users WHERE discord =%s"
+#     data = int(discord_id)
+#     mysql.execute(qry, data)
+#     result = mysql.fetchone()
+#
+#     if len(result) > 0:
+#         try:
+#             usertype = result[0]
+#             userstatus = "return"
+#             await link_accounts(id)
+#             msg = "{0.mention}, Welcome back to the MultiCrew Discord Server. Since you already have your Discord ID in your MultiCrew Portal account, your role has been assigned!"
+#             await client.send_message(member, msg.format(member))
+#         except TypeError:
+#             msg = "{0.mention}, Welcome to the MultiCrew Discord Server. Make sure you have an account at https://multicrew.co.uk to be able to get your role assigned, once your account is made type enter your Discord ID: {0.id} into your MultiCrew Portal Profile. If you need any help don't hesitate to contact an Admin.\nEnjoy the server!"
+#             await client.send_message(member, msg.format(member))
+#     else:
+#         msg = "{0.mention}, Welcome to the MultiCrew Discord Server. Make sure you have an account at https://multicrew.co.uk to be able to get your role assigned, once your account is made type enter your Discord ID: {0.id} into your MultiCrew Portal Profile. If you need any help don't hesitate to contact an Admin.\nEnjoy the server!"
+#         await client.send_message(member, msg.format(member))
